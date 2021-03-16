@@ -925,7 +925,6 @@ body.offcanvas {
     color: #000; }
     .work-menu span a.active {
       color: #2c98f0; }
-
 .project {
   background-size: cover;
   background-position: center center;
@@ -935,6 +934,17 @@ body.offcanvas {
   width: 100%;
   display: block;
   margin-bottom: 30px; }
+  .project .wandwe .desc {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: #282053 !important;
+    opacity: 0;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s; }
   .project .desc {
     position: absolute;
     top: 0;
@@ -1013,6 +1023,8 @@ body.offcanvas {
         .project .desc span {
           -webkit-transform: translate3d(0, 0, 0);
           transform: translate3d(0, 0, 0); } }
+  .project:hover .wandwe .desc {
+    opacity: 1; }
   .project:hover .desc {
     opacity: 1; }
     .project:hover .desc h3 {
